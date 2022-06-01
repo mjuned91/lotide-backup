@@ -17,7 +17,7 @@ const eqArrays = (arr1, arr2) => {
     if (arr1[i] !== arr2[i]) {
       console.log(false);
       return;
-    } 
+    }
   }
   console.log(ans);
   return ans;

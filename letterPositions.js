@@ -28,7 +28,7 @@ const assertArraysEqual = (arr1, arr2) => {
 
 const letterPositions = function(sentence) {
   const results = {};
-  for (i = 0; i < sentence.length; i++) {
+  for (let i = 0; i < sentence.length; i++) {
     if (sentence[i] !== " ") {
       let letter = sentence[i];
       if (!results[letter]) {

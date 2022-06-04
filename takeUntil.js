@@ -1,6 +1,9 @@
+//This function will return a "slice of the array with elements taken from the beginning".
+//It should keep going until the callback returns a truthy value.
+
 const takeUntil = (array, callback) => {
   const results = [];
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (callback(array[i]) === true) {
       return results;
     } else {

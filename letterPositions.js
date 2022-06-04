@@ -1,3 +1,5 @@
+//Returns all the indices in the string where each character is found.
+
 /*
 const assertArraysEqual = (arr1, arr2) => {
 

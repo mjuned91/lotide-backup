@@ -1,3 +1,5 @@
+//Helps us search for a key on an object where its value matches a given value.
+
 const bestTVShowsByGenre = { 
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",

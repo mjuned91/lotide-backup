@@ -2,7 +2,7 @@
 //If no key is found, it returns undefined.
 
 const findKey = (object, callback) => {
-  let keyPack = Object.keys(object);
+  //let keyPack = Object.keys(object);
   for(let key in object) {
     if (callback(object[key])) {
       return key;
@@ -15,7 +15,7 @@ const findKey = (object, callback) => {
     //console.log(keyPack[i]);
     //console.log(object[keyPack[i]]);
     //console.log(callback(object[keyPack[i]]));
-    
+
     if (callback(object[keyPack[i]])) {
       return keyPack[i];
       }

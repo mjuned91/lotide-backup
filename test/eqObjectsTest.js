@@ -1,16 +1,27 @@
 const assert = require('chai').assert;
 const eqObjects = require('../eqObjects');
 
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-console.log(eqObjects(ab, ba)); // => true
 
-const abc = { a: "1", b: "2", c: "3" };
-console.log(eqObjects(ab, abc)); // => false
+describe("eqObjects", () => {
+  const ab = { a: "1", b: "2" };
+  const ba = { b: "2", a: "1" };
+  const abc = { a: "1", b: "2", c: "3" };
+  it("should return true for eqObjects(ab, ba)", () => {
+    assert.strictEqual(eqObjects(ab, ba), true);
+  });
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-console.log(eqObjects(cd, dc)); // => true
+  it("should return false for eqObjects(ab, abc)", () => {
+    assert.strictEqual(eqObjects(ab, abc), false);
+  });
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-console.log(eqObjects(cd, cd2)); // => false
+  const cd = { c: "1", d: ["2", 3] };
+  const dc = { d: ["2", 3], c: "1" };
+  const cd2 = { c: "1", d: ["2", 3, 4] };
+  it("should return true for eqObjects(cd, dc)", () => {
+    assert.strictEqual(eqObjects(cd, dc), true);
+  });
+
+  it("should return false for eqObjects(cd, cd2)", () => {
+    assert.deepEqual(eqObjects(cd, cd2), false);
+  });
+});

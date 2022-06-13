@@ -1,5 +1,3 @@
-// Will take in two objects and return the appropriate message.
-
 const eqObjects = require('./eqObjects');
 
 const assertObjectsEqual = function(actual, expected) {

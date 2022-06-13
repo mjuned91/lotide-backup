@@ -1,10 +1,3 @@
-/*
-Takes in a collection of items and return counts for 
-a specific subset of those items. It won't count everything. 
-In order to decide what to count, it will also be given an idea of which items we care about 
-and it will only count those, ignoring the others.
-*/
-
 const countOnly = (allItems, itemsToCount) => {
   const results = {}
   for (const item of allItems) {

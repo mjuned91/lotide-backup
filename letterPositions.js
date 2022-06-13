@@ -1,33 +1,3 @@
-//Returns all the indices in the string where each character is found.
-
-/*
-const assertArraysEqual = (arr1, arr2) => {
-
-  const eqArrays = (arr1, arr2) => {
-    if (arr1.length !== arr2.length) {
-      console.log(false);
-      return;
-    }
-    
-    let ans = true;
-    for (let i = 0; i < (arr1.length); i++) {
-      if (arr1[i] !== arr2[i]) {
-        console.log(false);
-        return;
-      }
-    }
-    console.log(ans);
-    return ans;
-  };
-
-  if (eqArrays(arr1, arr2)) {
-    console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-    } else {
-      console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-  };
-}
-*/
-
 const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
@@ -42,4 +12,5 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
-console.log(letterPositions("lighthouse in the house"));
+
+module.exports = letterPositions;

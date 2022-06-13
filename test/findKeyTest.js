@@ -14,6 +14,7 @@ describe("#findKey", () => {
   it("should return 'noma' for x => x.stars === 2", () => {
     assert.strictEqual(findKey(test, x => x.stars === 2), "noma");
   });
+  
   it("should return 'Akaleri' for x => x.stars === 3", () => {
     assert.strictEqual(findKey(test, x => x.stars === 3), "Akaleri");
   });

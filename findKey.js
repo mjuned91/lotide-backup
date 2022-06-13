@@ -1,6 +1,3 @@
-//Scans the object and returns the first key for which the callback returns a truthy value. 
-//If no key is found, it returns undefined.
-
 const findKey = (object, callback) => {
   //let keyPack = Object.keys(object);
   for(let key in object) {
@@ -22,14 +19,6 @@ const findKey = (object, callback) => {
     }
     return undefined;
     */
-    
 };
 
-console.log(findKey({
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}, x => x.stars === 2)); // => "noma"
+module.exports = findKey;

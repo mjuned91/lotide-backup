@@ -9,6 +9,3 @@ const without = (source, itemsToRemove) => {
 };
 
 module.exports = without;
-
-const words = ["hello", "world", "lighthouse"];
-console.log(without(words, ["lighthouse"]));

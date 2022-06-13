@@ -1,7 +1,7 @@
 const without = (source, itemsToRemove) => {
   let newArr = [];
   for (let i = 0; i < source.length; i++) {
-    if (source[i] !== itemsToRemove[i]) {
+    if (!itemsToRemove.includes(source[i])) {
       newArr.push(source[i]);
     }
   }
@@ -9,3 +9,6 @@ const without = (source, itemsToRemove) => {
 };
 
 module.exports = without;
+
+const words = ["hello", "world", "lighthouse"];
+console.log(without(words, ["lighthouse"]));

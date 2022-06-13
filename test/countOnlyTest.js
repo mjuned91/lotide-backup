@@ -15,7 +15,7 @@ const firstNames = [
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-describe("#tail", () => {
+describe("#countOnly", () => {
   it("should return 1 for result1['Jason']", () => {
     assert.strictEqual(result1["Jason"], 1);
   });
